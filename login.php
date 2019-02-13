@@ -1,11 +1,23 @@
 <?php
 require 'head.html';
 ?>
-<form type="submit" method="POST" action="loginFunc.php">
-    <input type="text" name="screenName">
-    <input type="password" name="password">
-    <input type="submit" value="Login">
+
+<form method="POST" action="loginFunc.php">
+    <div class="container">    
+        <div class="form-group">
+            <label for="screenName">Username/E-Mail:</label>
+            <input class="form-control" type="text" name="screenName" id="screenName">
+        </div>
+        <div class="form-group">
+            <label for="psw">Password:</label>
+            <input class="form-control" type="password" name="password" id="psw">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
 </form>
+
 <?php
 require 'foot.php'
 ?>
