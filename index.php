@@ -1,6 +1,6 @@
 <?php
 
-require 'head.html';
+require 'head.php';
 
 $json_string = file_get_contents('/var/www/html/config.json');
 $json_data = json_decode($json_string);
@@ -28,7 +28,7 @@ while($row = mysqli_fetch_assoc($result)) {
 	if ($i%3 == 0) {
 		echo "<div class='row'>";
 	}
-	echo "<div class='col-md-4'>" . 
+	echo "<div class='col-md-4 pb-3'>" . 
 	"<div class='card bg-dark'>" . 
 	"<img class='rounded card-img-top' src='images/{$row[fileName]}' alt='{$row[fileName]}'>" .
 	"<div class='card-body'>" .

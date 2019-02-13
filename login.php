@@ -1,7 +1,7 @@
 <?php
-require 'head.html';
+require 'head.php';
 ?>
-
+<div class="container-fluid">
 <form method="POST" action="loginFunc.php">
     <div class="container">    
         <div class="form-group">
@@ -17,6 +17,7 @@ require 'head.html';
         </div>
     </div>
 </form>
+</div>
 
 <?php
 require 'foot.php'

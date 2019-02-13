@@ -1,6 +1,6 @@
 <?php
 
-require 'head.html';
+require 'head.php';
 
 $json_string = file_get_contents('/var/www/html/config.json');
 $json_data = json_decode($json_string);
@@ -30,8 +30,9 @@ if (strtolower($_SERVER['REQUEST_METHOD']) == 'post' && !empty($_FILES)) {
 
         mysqli_query($conn, $sql);
     }
-    mysqli_close($conn);
 }
+
+mysqli_close($conn);
 
 
 echo "<h1>Uploaded!</h1>";

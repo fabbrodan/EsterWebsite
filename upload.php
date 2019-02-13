@@ -1,5 +1,5 @@
 <?php
-require 'head.html';
+require 'head.php';
 
 session_start();
 if(!isset($_SESSION["user"])) {

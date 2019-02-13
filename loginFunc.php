@@ -1,5 +1,5 @@
 <?php
-require 'head.html';
+require 'head.php';
 
 $screenName = $_POST["screenName"];
 $password = base64_encode($_POST["password"]);
