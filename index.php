@@ -28,9 +28,6 @@ while($row = mysqli_fetch_assoc($result)) {
 	if ($i%3 == 0) {
 		echo "<div class='row'>";
 	}
-<<<<<<< HEAD
-	echo "<div class='view overlay zoom'><img src='images/{$row[fileName]}' alt='{$row[fileName]}' style='width:100%;height:100%;'></div>";
-=======
 	echo "<div class='col-md-4'>" . 
 	"<div class='card bg-dark'>" . 
 	"<img class='rounded card-img-top' src='images/{$row[fileName]}' alt='{$row[fileName]}'>" .
@@ -39,7 +36,6 @@ while($row = mysqli_fetch_assoc($result)) {
 	"</div>" .
 	"</div>". 
 	"</div>";
->>>>>>> ff2c2ebc3ad688b528eabc4f4634212506cb8df9
 	
 	if ($i%3 == 2) {
 		echo "</div>";
