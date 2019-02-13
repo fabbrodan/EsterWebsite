@@ -1,13 +1,6 @@
 <?php
 require 'head.html';
 ?>
-<<<<<<< HEAD
-<form type="submit" method="POST" action="loginFunc.php">
-    <input type="text" name="screenName">
-    <input type="password" name="password">
-    <input type="submit" value="Login">
-</form>
-=======
 
 <form method="POST" action="loginFunc.php">
     <div class="container">    
@@ -25,7 +18,6 @@ require 'head.html';
     </div>
 </form>
 
->>>>>>> ff2c2ebc3ad688b528eabc4f4634212506cb8df9
 <?php
 require 'foot.php'
 ?>
