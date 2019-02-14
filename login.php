@@ -1,8 +1,15 @@
 <?php
 require 'head.php';
+require 'functions.php';
+$functions = new Functions();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $functions->loginFunction();
+}
+
 ?>
 <div class="container-fluid">
-<form method="POST" action="loginFunc.php">
+<form method="POST" action="login.php">
     <div class="container">    
         <div class="form-group">
             <label for="screenName">Username/E-Mail:</label>
@@ -20,5 +27,18 @@ require 'head.php';
 </div>
 
 <?php
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    session_start();
+    if (isset($_SESSION["failed"])) {
+        echo "<div class='container'>" .
+        "<div class='alert alert-danger alert-dismissable fade show'>" .
+        "<button type='button' class='close' data-dismiss='alert'>&times;</button>" .
+        "<strong style='text-color:red;'>Wrong username/e-mail or password!</strong>" .
+        "</div></div>";
+    }
+    unset($_SESSION["failed"]);
+}
+
 require 'foot.php'
 ?>

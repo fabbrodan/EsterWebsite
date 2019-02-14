@@ -8,7 +8,7 @@ session_start();
 
 <footer class="footer fixed-bottom">
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-dark bg-dark">
+        <nav class="navbar sticky-bottom navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-dark bg-dark">
             <div>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -21,6 +21,7 @@ session_start();
                             if (isset($_SESSION["user"])) {
                                 echo "<li class='nav-item active'><a class='nav-link' href='/upload.php'>Upload<span class='sr-only'></span></a></li>";
                                 echo "<li class='nav-item active'><a class='nav-link' href='/logout.php'>Logout<span class='sr-only'></span></a></li>";
+                                echo "<li class='nav-item active'><a class='nav-link' href='/settings.php'>Settings<span class='sr-only'></span></a></li>";
                             }
                         ?>
                 </ul>
