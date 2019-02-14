@@ -40,5 +40,4 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     unset($_SESSION["failed"]);
 }
 
-require 'foot.php'
 ?>

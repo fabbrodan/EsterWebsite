@@ -7,7 +7,6 @@ $functions = new Functions();
 <div class="container">
 
 <?php
-
 $result = $functions->getImages();
 $i = 0;
 while($row = mysqli_fetch_assoc($result)) {
@@ -18,9 +17,9 @@ while($row = mysqli_fetch_assoc($result)) {
 	echo "<div class='col-md-4 pb-3'>" . 
 	"<div class='card bg-dark'>" . 
 	"<img class='rounded card-img-top' src='images/{$row[fileName]}' alt='{$row[fileName]}'>" .
-	"<div class='card-body'>" .
+	/*"<div class='card-body'>" .
 	"<button class='btn btn-primary'>A Button</button>" .
-	"</div>" .
+	"</div>" .*/
 	"</div>". 
 	"</div>";
 	
@@ -32,7 +31,6 @@ while($row = mysqli_fetch_assoc($result)) {
 ?>
 
 </div>
-
 <?php
-require 'foot.php';
+//require 'foot.php';
 ?>

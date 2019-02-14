@@ -22,6 +22,7 @@ session_start();
                                 echo "<li class='nav-item active'><a class='nav-link' href='/upload.php'>Upload<span class='sr-only'></span></a></li>";
                                 echo "<li class='nav-item active'><a class='nav-link' href='/logout.php'>Logout<span class='sr-only'></span></a></li>";
                                 echo "<li class='nav-item active'><a class='nav-link' href='/settings.php'>Settings<span class='sr-only'></span></a></li>";
+                                echo "<li class='nav-item active'><a class='nav-link' href='/archive.php'>Archive<span class='sr-only'></span></a></li>";
                             }
                         ?>
                 </ul>

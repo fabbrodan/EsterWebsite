@@ -70,7 +70,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["addUser"])) {
                 </h4>
             </nav>
         </div>
-        <div class="container">
     </div>
     <nav class="navbar navbar-dark bg-dark">
     <h3 class="text-white">Users</h3>
@@ -78,7 +77,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["addUser"])) {
         <span class="navbar-toggler-icon"></span>
     </nav>
 </div>
-
-<?php
-require 'foot.php'
-?>
