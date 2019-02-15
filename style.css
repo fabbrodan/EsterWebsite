@@ -1,0 +1,16 @@
+.sidebar {
+    opacity: .8;
+    width:10%;
+    left:0px;
+    position:fixed;
+    background-color: azure;
+}
+
+.sidebar-li-a {
+    color: black;
+    opacity: 1;
+}
+
+.sidebar-li-a:hover {
+    color: burlywood;
+}
