@@ -1,16 +1,40 @@
-.sidebar {
-    opacity: .8;
-    width:10%;
-    left:0px;
-    position:fixed;
-    background-color: azure;
+@font-face {
+    font-family: MedusaGothic;
+    src: url(fonts/MedusaGothic.otf);
 }
 
 .sidebar-li-a {
     color: black;
     opacity: 1;
+    text-shadow:
+    -0.5px -0.5px 0 #ffffff,
+    -0.5px 0.5px 0 #ffffff,
+    0.5px -0.5px 0 #ffffff,
+    0.5px 0.5px 0 #ffffff;
 }
 
 .sidebar-li-a:hover {
-    color: burlywood;
+    color: darkgray
+}
+
+html {
+    height:100%;
+}
+
+body {
+    font-family: MedusaGothic;
+    /*background-image: url(static/pexels-photo-683402.jpeg)*/
+
+    background-image: linear-gradient(to bottom right, darkgrey, white);
+    background-repeat: no-repeat;
+    min-height:100%;
+}
+.pageHeader {
+    text-align: center;
+    position: relative;
+    text-shadow:
+    -0.5px -0.5px 0 #ffffff,
+    -0.5px 0.5px 0 #ffffff,
+    0.5px -0.5px 0 #ffffff,
+    0.5px 0.5px 0 #ffffff;
 }
