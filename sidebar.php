@@ -20,7 +20,7 @@ session_start();
                 if (isset($_SESSION["user"])) {
                     echo "<li class='nav-item active'><a class='nav-link sidebar-li-a' href='/upload.php'>Upload</a></li>";
                     echo "<li class='nav-item active'><a class='nav-link sidebar-li-a' href='/logout.php'>Logout</a></li>";
-                    //echo "<li class='nav-item active'><a class='nav-link sidebar-li-a' href='/settings.php'>Settings</a></li>"
+                    //echo "<li class='nav-item active'><a class='nav-link sidebar-li-a' href='/settings.php'>Settings</a></li>";
                     echo "<li class='nav-item active'><a class='nav-link sidebar-li-a' href='/archive.php'>Archive</a></li>";
                 }
                 ?>

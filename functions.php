@@ -2,6 +2,22 @@
 
 class Functions {
 
+    function loadImgsArchive() {
+        $dir = '/var/www/html/images';
+        $files = preg_grep('/^([^.])/', scandir($dir));
+        $files = array_values($files);
+
+        return $files;
+    }
+
+    function loadFilesArchive() {
+        $dir = '/var/www/html/documents';
+        $files = preg_grep('/^([^.])/', scandir($dir));
+        $files = array_values($files);
+
+        return $files;
+    }
+
     function loginFunction() {
 
         $screenName = $_POST["screenName"];

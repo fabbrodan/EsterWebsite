@@ -23,9 +23,9 @@ html {
 
 body {
     font-family: MedusaGothic;
-    /*background-image: url(static/pexels-photo-683402.jpeg)*/
+    background-image: url(static/pexels-photo-683402.jpeg);
 
-    background-image: linear-gradient(to bottom right, darkgrey, white);
+    /*background-image: linear-gradient(to bottom right, darkgrey, white);*/
     background-repeat: no-repeat;
     min-height:100%;
 }
